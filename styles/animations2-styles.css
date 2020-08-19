@@ -1,0 +1,70 @@
+body, 
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    /*Alineación vertical*/
+    align-items: center;
+    /*Alineación Horizontal*/
+    justify-content: center;
+}
+
+#figura {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: purple;
+    animation-name: cambio 3s ease-out alternate infinite,
+     transformacion 3s ease-in-out alternate-reverse infinite;
+    /*
+    animation-name: cambio;
+    /*animation-duration: 5s;
+    animation-timing-function: ease-out;
+    /*Tiempo de espera entre el tiempo de carga y el inicio de la animación*/
+    /*animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;*/
+}
+
+/*#figura:hover {
+    animation-play-state: paused;
+}*/
+
+@keyframes change {
+    0% {
+        background-color: purple;
+        transform: scale(.3);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: deeppink;
+       
+    }
+    /*A través de la escala de tiempo, se puede definir a partir de qué punto el estado se repite*/
+    /*60%*/
+    100% {
+        /*transform: skew(20deg, 10deg);*/
+        
+        /*scale(2) rotate(20deg) translate(200px, -10%) skew();*/
+        background-color: blueviolet;
+        border-radius: 0%;
+        /*opacity: .5;*/
+    }
+}
+
+@keyframes transformation {
+    /*Propiedad para transformar el elemento   Funcion para dibujar a escala*/
+    /*Torcer elemento*/
+    0% {
+        transform: translate(0,0) scale(.5) rotate(20deg);
+    }
+    50% {
+        transform: translate(100px, 0) rotate(-20deg);
+    }
+    100% {
+        transform: translate(-100px, 0) scale(2) ;
+    }
+}

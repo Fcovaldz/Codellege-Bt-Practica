@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    /*animation-iteration-count: infinite;*/
+}
+/*Nombre de la animacion*/
+@keyframes slidein {
+    /*Momento inicial*/
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+/*Encabezado del sitio*/
+header {
+    background-color: chocolate;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*******Contenido*******/
+.row{
+    clear: both;
+    display: table;
+}
+/*Selector de atributo donde ele valor contenido tiene "col-" */
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*Estilos para menu*/
+.menu ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+
+}
+.menu li {
+    /*Propiedad para incluir padding y bordes en los elementos*/
+    box-sizing: border-box;
+    background-color: tomato;
+    color: white;
+    margin: 10px 5px;
+    padding: 5px;
+
+}
+/*Estilos para seccion lateral*/
+aside { 
+    box-sizing: border-box;
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    margin: 10px 5px;
+}
+/*Estilos para footer */
+footer {
+    background-color: chocolate;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+/*Sistema de Columnas*/
+.col-3 {
+    width: 25%;
+}
+.col-6 {
+    width: 45%;
+}
+/*Solo pantalla y el ancho maximo  del dispósitivo sea 600px*/
+
+@media screen and (max-width: 600px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+    header {
+        background-color: darkblue;
+    }
+    footer {
+        background-color: darkblue;
+    }
+    .menu li {
+       background-color: darkcyan;
+    }
+
+    aside {
+        background-color: darkcyan;
+        margin: 10px 0px;
+        width: 90%;
+    }
+}
+
+/*Solo pantalla y el ancho minimo del dispósitivo sea 900px*/
+
+@media screen and (min-width: 900px) {}
+   
+    

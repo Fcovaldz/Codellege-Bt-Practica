@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles-1.css">
+    <title>JavaScript Sample DOM Manipulation</title>
+</head>
+<body>
+    <h1>Manipulación del DOM</h1>
+    <div id="contenedor1">
+
+        <h1 id="titulo">Ejemplo de JavaScript - Obtener elementos por ID</h1>
+        <p id="demo1">Cualquier contenido</p>
+        <p id="demo2">Cualquier contenido</p>
+        <button type="button" onclick="prueba()">Click</button>
+    </div>
+    <div id="contenedor2">
+        <h1>Ejemplo de JavaScript - Obtener elementos por Name</h1>
+        <p>Elije una opción:</p>
+        <p>
+            <input type="radio" name="numero" value="1">Uno
+            <input type="radio" name="numero" value="2">Dos
+            <input type="radio" name="numero" value="3">Tres
+
+        </p>
+        <p>
+            <button id="btnNumero">Enviar valor</button>
+        </p>
+    </div>
+
+    <div id="contenedor3">
+        <h1>Ejemplo de JavaScript - Obtener elementos por Tag</h1>
+        <section onmouseover="backgroundColorChange(this.style.background)" id="caja1"></section>
+        <section id="caja2"></section>
+        <section id="caja3"></section>
+    </div>
+
+    <div id="contenedor4">
+        <h1>Obtener elementos por Class</h1>
+        <ul id="listaNO">
+            <li class="ejemplo">Tigre</li>
+            <li>Lobo</li>
+            <li class="ejemplo">Quetzal</li>
+            <li>Tiburón</li>
+        </ul>
+        <ol id="listaO">
+            <li class="ejemplo">Tigre</li>
+            <li>Lobo</li>
+            <li>Quetzal</li>
+            <li>Tiburón</li>
+        </ol>
+        <button onclick="elegirPorClase()">Seleccionar por clase</button>
+    </div>
+    <div id="contenedor5">
+        <h1>Obtener elementos por Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptate hic consequatur eos vitae error quo. Unde pariatur perferendis beatae tempore, temporibus ab, explicabo voluptatum architecto odit, omnis optio ipsam?</p>
+        <p>Eligendi voluptates numquam culpa quae consectetur obcaecati nesciunt consequuntur nemo provident veritatis sit enim iste, impedit quo fugiat harum et! Soluta animi culpa rerum inventore quae sit magnam magni? Quos?</p>
+        <p>Et omnis nostrum itaque sit blanditiis optio mollitia maiores! Tenetur sint magnam similique quaerat recusandae eaque consectetur aut odio? Tenetur voluptatem mollitia officia veniam commodi eligendi optio magni. Praesentium, vel!</p>
+
+        <button id="btnSelector">Obtener elementos</button>
+    </div>
+
+    <script src="scripts/script-1.js"></script>
+    
+</body>
+</html>

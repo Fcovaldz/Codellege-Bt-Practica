@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-sample</title>
+    <style type="text/css">
+    /*reglas de etiquetas o de tipo*/
+
+        /*Encabezado*/
+    h1 {
+        color:aqua; /*Propiedad que afecta texto*/
+    }
+        /*Enfasis*/
+    em {
+        font-style: italic;
+        /*Estilo de la fuente*/
+    }
+    table {
+        border-collapse: collapse;
+        /*Contraccion de borde */
+    }
+    table,
+    td,
+    th {
+        border-bottom: 1px solid #ddd;/*Propiedades para el borde*/
+        padding: 5px;/*Espacio entre contenido y contenedor*/
+        text-align: left;/*Alinear contenido*/
+    }
+    td,
+    th {
+        width: 100px;/*Ancho del elemento*/
+        
+    }
+    tbody tr:hover {
+        background-color: pink;
+        /*Color de fondo*/
+    }
+    /*Reglas de clase*/
+    .negrita {
+        font-weight: bolder;/*Densidad de texto*/
+        color:gold;
+    }
+    .sub {
+        text-decoration: underline;
+    }
+
+
+    .azul {
+        color:blue;/*Color de texto*/
+    }
+
+    .rojo {
+        color:red;
+    }
+    .verde {
+        color: lightgreen;
+    }
+    .oliva {
+        color: olive;
+    }
+    /*Reglas de ID*/
+    #emRosa {
+        color: rgb(red, green, blue);
+    }
+    /*Reglas combinadas*/
+    table span {
+        color: orange;
+    }
+    </style>
+       
+          
+      
+ </head>
+ <body>
+
+
+    <h1>Lorem imsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis ad pariatur <span class="negrita rojo">inventore, commodi </span> commodi odio atque sit laborum a unde dolore itaque mollitia corrupti laboriosam eligendi <span class="azul">voluptatum, tempora </span>quas neque?
+    </p>
+    <h2>Aliquam tincidunt, sem eget volutpat porta</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="rojo sub">Laboriosam<em class="azul">deleniti</em>deleniti quisquam possimus debitis eveniet</span> ratione ullam aspernatur nisi architecto maxime dolorum exercitationem quia, obcaecati cupiditate! <span style="color:orangered; text decoration: underline">Libero dolores</span> reprehenderit asperiores.</p>
+    <table border="1">
+  
+    <caption class="azul">Titulo tabla</caption>
+    <thead>
+        <td></td>
+        <td>columna 1</td>
+        <td>columna 2</td>
+    </thead>
+      <tbody>
+    <tr>
+        <td>Fila 1</td>
+        <td>Contenido <span class="sub">1</span></td>
+        <td>Contenido 2</td>
+    </tr>
+     </tbody>
+    <tr>
+        <td>Fila 2</td>
+        <td>Contenido <span class="negrita">3</span></td>
+        <td>Contenido 4</td>
+    </tr>
+    <tfoot class="negrita rojo">
+        <td></td>
+        <td>Contenido 5</td>
+        <td>Contenido 6</td>
+    </tfoot>
+    </table>
+    <p class="oliva">Lorem ipsum dolor sit amet. <em id="empRosa">Lorem, ipsum dolor.</em>Lorem ipsum dolor sit.</p>
+ </body>
+
+
+</html>
+
+     

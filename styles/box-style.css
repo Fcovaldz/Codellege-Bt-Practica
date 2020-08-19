@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+#padre {
+   /* background-color: lightgreen;*/
+   /*Gradientes*/
+  /* background-image: */
+    /*background: linear-gradient(green,cyan);/*TOP -> BOTOM */
+   /* background: linear-gradient(to rigth, green,cyan);*/
+    background: linear-gradient(60deg, green,cyan);
+    /*Espacio entre contenido y contenedor*/
+    /*padding: 20px;  Todos los espacios*/
+    /*padding: 20px 40px;  Arriba/Abajo Der/Izq */
+    /*padding: 20px 40px 10px;  Arriba Lateral Abajo */
+    padding: 20px; 
+    /*Arriba Der Abajo Izq*/
+    /*Margenes del contenedor*/
+    margin-top: 10px;
+    /*Margen superior*/
+    margin-bottom: 20px;
+    /*Margenes laterales*/
+    margin-left: 5px;
+    margin-right: 5px;
+    /*
+    margin: 10px;  Todos los márgenes
+    margin: 10px 20 px;  Superiores Laterales
+    margin: 10px 20 px 30 px; Superior Laterales Inferior
+    margin 10px 20px 30px 5px; Superior Derecha Inferior Izquierda
+    */
+    border: 2px solid black;
+   
+
+}
+
+
+#hijo {
+    background-color: lightcoral;
+    /*Manipulación de bordes*/
+    border-top: 1px solid rgb(179, 20, 14);
+    /*border-right: thick dotted purple;*/
+    margin-right: auto;
+    border-bottom: thin dashed blue;
+    border-left: 3px ridge #dc143c;
+    border: solid 2em linear-gradient(blue,blueviolet);
+    border-radius: 30px;
+}
+
+#adj {
+    background-color: lightskyblue;
+    padding: 30px;
+    height: 500px;
+    width: 2000px;
+    position: relative;
+}
+.cajas {
+    display: inline-block;
+    margin: 20px;
+}
+
+#esquinas1 {
+    border-radius: 25px;
+    border: thin solid black;
+    /*background: #73ad21;*/
+    background-image: radial-gradient(circle closest-corner at 45px 45%, #ffffff 0%, rgba(0, 0, 255, 0.5), 50%, black 80%);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    color: blue;
+}
+#esquinas2 {
+    border-radius: 20px 50%;/*El borde porcentual es relativo al tamaño del bloque*/
+    border: 5px solid pink ;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+/*Posicion absoluta*/
+/*.posicion {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}*/
+/*Posicion fija*/
+/*.posicion {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+}*/
+/*.posicion relativa {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+}*/ 
+.posicion  {
+    /*Sticky: Conserva una posicion fija(en base a la vista del puerto) mientras se conserva en los limites del padre */
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+} 
+#esquinas3 {
+    border: thick solid blueviolet;
+    border-radius: 10px 1em 30%;
+    background-image: url(../img/descarga.jpg);
+    background-size: cover;/*Tamaño de imagen de fondo relativo al tamaño del contenedor; ancho | alto. Si un unico valor se indica, representa el ancho; por lo que el alto se ajusta automaticamente al tamaño del contenedor*/
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+span {
+    color: chocolate;
+    /*display: none;*/
+   /* visibility: hidden; Elemento "escondido", pero preserva su espacio*/
+}
+/*SELECTORES COMBINADOS. La regla se aplicara sobre elementos de tipo SPAN*/
+span.ej1 {
+    display: none;
+    /*Elemento oculto y que pierde su lugar*/
+}
+
+span.ej2 {
+    display: inline;
+    /*Elemento que se muestra en linea al resto de los elementos sin tener propiamente dimensiones*/
+}
+
+span.ej3 {
+    display: block;
+}
+
+span.ej4 {
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+}

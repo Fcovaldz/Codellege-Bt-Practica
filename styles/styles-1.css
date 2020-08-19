@@ -1,0 +1,27 @@
+#contenedor1 {
+    background-color: lightyellow;
+}
+#contenedor2 {
+    background-color: lightpink;
+}
+#contenedor3 {
+    background-color: lightgreen;
+    
+}
+#contenedor3 > section {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#caja1 {
+    background-color: purple;
+}
+#caja2 {
+    background-color: magenta;
+}
+#caja3 {
+    background-color: violet;
+}

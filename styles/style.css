@@ -1,0 +1,17 @@
+.bg-custom{
+    background-color: #7952b3;
+}
+.bg-custom2{
+    background-color: #7952b386;
+}
+.text-custom{
+    color: #7952b3;
+}
+.tooltip-inner{
+    background: rgba(255, 255, 255, 0.555)!important;
+    color: black;
+}
+.tooltip.bs-tooltip-auto[x-placement^-bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before{
+    border-bottom-color: rgba(255, 255, 255, 0.555);
+
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Padding & Margin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- margen de todo el elemento con la clase m-(0=0px, 1=4px, 2=8px, 3=16px, 4=24px, 5=48px)-->
+<!-- margen a la izquierda con ml-(0,1,2,3,4,5)-->
+<!-- margen a la derecha con mr-(0,1,2,3,4,5)-->
+<!-- margen hacia arriba con mt-(0,1,2,3,4,5)-->
+<!-- margen hacia abajo con mb-(0,1,2,3,4,5)-->
+<!-- manipular el margen de un elemento en funcion de un eje; puede ser eje X(horizontal) o eje Y(vertical) -->
+      <h1 class="bg-info ml-1">Padding & Margin margin left 5</h1>
+      <h1 class="bg-warning mr-5">Padding & Margin</h1>
+      <h1 class="bg-primary mt-5">Padding & Margin</h1>
+      <h1 class="bg-danger mb-4">Padding & Margin</h1>
+      <h1 class="bg-info m-5">Padding & Margin</h1>
+
+      <div class="d-flex bg-secondary">
+          <h2 class="bg-primary">Elemento 1</h2>
+          <h2 class="bg-info m-0">Elemento 2</h2>
+          <h2 class="bg-success">Elemento 3</h2>
+      </div>
+      
+      <div class="d-flex bg-secondary my-0">
+          <h2 class="bg-primary">Elemento 1</h2>
+          <h2 class="bg-info mx-5">Elemento 2</h2>
+          <h2 class="bg-success">Elemento 3</h2>
+      </div>
+      
+      <!-- padding de todo el elemento con la clase p-(0=0px, 1=4px, 2=8px, 3=16px, 4=24px, 5=48px)-->
+<!-- padding a la izquierda con pl-(0,1,2,3,4,5)-->
+<!-- padding a la derecha con pr-(0,1,2,3,4,5)-->
+<!-- padding hacia arriba con pt-(0,1,2,3,4,5)-->
+<!-- padding hacia abajo con pb-(0,1,2,3,4,5)-->
+<!-- manipular el padding de un elemento en funcion de un eje; puede ser eje X(horizontal) o eje Y(vertical) -->
+      <div class="bg-secondary p-2">
+          <h2 class="bg-primary">Elemento 1</h2>
+          <h2 class="bg-info mx-5">Elemento 2</h2>
+          <h2 class="bg-success mb-0">Elemento 3</h2>
+      </div>
+      <h1 class="bg-dark pl-5">Elemento -1 padding left 5</h1>
+      <h1 class="text-right bg-info pr-5">Elemento -2 padding right 5</h1>
+      <h1 class="bg-warning pt-5">Elemento -3 padding top 5</h1>
+      <h1 class="bg-danger pb-5">Elemento -4</h1>
+      <h1 class="text-center bg-light py-5">Elemento -5</h1>
+      <h1 class="bg-secondary px-5">Elemento -6</h1>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

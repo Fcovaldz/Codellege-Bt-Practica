@@ -1,0 +1,15 @@
+body {
+    background-color: lightskyblue;
+}
+/*Solo pantalla y el ancho minimo del dispósitivo sea 600px*/
+@media only screen and (max-wid: 600px) {
+    body {
+        background-color: lightseagreen;
+    }
+}
+/*Solo pantalla y el ancho minimo del dispósitivo sea 900px*/
+@media only screen and (max-wid: 900px) {
+    body {
+        background-color: coral;
+    }
+}

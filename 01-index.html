@@ -1,0 +1,82 @@
+<!-- El documento es de tipo HTML 5 -->
+<!DOCTYPE html> 
+
+<html lang="en">
+
+    <!-- provee informacón general (metadatos) acerca del documento html en que estamos trabajando-->
+    <!-- título, scripts, estilos, metadatos -->
+    <!-- Metadatos: Es información que el navegador necesita pero no es visible para el usuario -->
+    <head>
+
+        <!-- meta es un elemento vacio (no tiene etiqueta de cierre) -->
+        <meta charset="utf-8">
+        <!-- Elementos vacíos: no tienen etiqueta de cierre -->
+        
+        <!-- name sirve para identificar que atributo del navegador vamos a usar -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title es el nombre que aparecerá en la pestaña del navegador -->
+        <title>Html start</title>
+
+    </head>
+
+    <!-- etiqueta de apertura -->
+    <body>
+    <!-- CONTENIDO -->
+        <p>Que pedo raza!!!!!</p>
+        <!-- CONTENIDO -->
+
+        <!-- Elementos de línea y bloque -->
+
+        <!-- Elementos de bloque: ocupan todo el ancho del elemento que los contiene y dan un salto de línea -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex quo neque, optio corporis mollitia similique hic in eaque eligendi, unde incidunt. Sint laboriosam, aspernatur voluptatum exercitationem blanditiis tempore unde.
+        Excepturi, iste asperiores eveniet voluptatem et eos explicabo libero quo distinctio blanditiis iure hic vel repudiandae perspiciatis nulla culpa quia quasi commodi alias magnam! Ipsa doloremque dolorum pariatur dolor illo.
+        Ex veniam nesciunt ducimus consectetur assumenda nobis omnis, cupiditate accusantium impedit adipisci laudantium, quisquam corrupti quo doloribus, possimus odio labore facere error! Atque dolores odit, facilis ad placeat velit commodi!
+        Eos aperiam sunt error illo vel architecto iusto in harum culpa hic enim id dolorum blanditiis, nihil, libero maiores quo earum nostrum ipsum eligendi. Nemo laboriosam iusto libero quis rem.</p>
+
+        <!-- elemento de línea: No ocupan todo el ancho de la pantalla, no dan salto de línea y están delimitados solo por su contenido(sin márgenes) -->
+        <a>Elemento línea</a>
+
+        <!-- Elementos anidados (Padres e hijos) -->
+        <p>Lorem ipsum: <a>Click aquí</a> <br> <hr> <span>Ingresa tu nombre aquí:</span><input type="text"> dolor sit amet consectetur adipisicing elit. Alias sint beatae nulla aspernatur nobis, blanditiis aperiam, rem dicta sit quos quaerat accusamus. Laudantium non enim consequuntur, atque vitae illo maxime.</p>
+        <!-- el elemento 'a'  es hijo del elemento 'p' -->
+            <hr>
+        <!-- Atributos y valores  (Persona: altura='178', peso='90', edad='15', nacionalidad='dubai')-->
+        <a href="">go to mercado libre</a>
+
+        <input type="number" placeholder="123456" min=0 max=5>
+        <!-- min y max funciona con number y text -->
+        <input type="text" id="txt1" minlength="2" maxlength="5">
+        <input type="date" id="inputFecha" max="2020-07-12">
+        
+        <select name_"paises" id_"selectpais">
+            <option value="">--selecciona un pais</option>
+            <option value="mexico">México</option>
+            <option value="peru">Perú</option>
+            <option value="canada">Canada</option>
+            <option value="brazil">Brazil</option>
+            <option value="argentina">Argentina</option>
+            
+        </select>
+
+        <!-- propiedad == atributo -->
+        <span id="identificador1">Este es un span</span>
+        <!-- El atributo id debe ser unico para cada elemento -->
+        <span id="identificador2">Este es un span</span>
+        <br>
+        <a href="./06-Practica2menu.html">Regresar a menú</a>
+
+        <audio src="./audio/wha.mpeg" controls autoplay></audio>
+        <hr>
+        <video width="500px" height="350px" controls>
+          <source src="./video/video.mp4"-type="video/mp4">
+            <!-- En caso de que no se pueda acceder al video (navegadores que no soportan el elemento) -->
+            <img src="./img/3.jpeg" alt="video no soportado">
+            Su navegador no soporta contenido multimedia  
+        </video>
+        <hr>
+        <iframe width="100%" height="800px" src="https://es.wix.com/"></iframe>
+
+    </body>
+    <!-- etiqueta de cierre -->
+
+</html>

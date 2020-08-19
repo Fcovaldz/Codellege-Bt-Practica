@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./b4/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ed5625f24b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+  </head>
+  <body class="bg-dark">
+      
+    <nav class="navbar navbar-expand  bg-custom">
+        <a href="" class="navbar-nav" > <i class="fab fa-bootstrap"></i> Codellege</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="miNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="./09-cards.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip"
+                title="Inicio de Página" data-placement="bottom">
+                    <a href="" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link disabled">Ruta inactiva</a>
+                </li>
+            </ul>
+
+            <form action="" class="form-inline my-2 my-lg-0">
+                <input type="search" class="form-control mr-sm-2" placeholder="Buscar">
+                <button class="btn btn-outline-warning my-2 my-sm-0">Search  <i class="fas fa-search    "></i></button>
+                
+                
+            </form>
+            <button class="btn btn-warning ml-1 text-light" data-toggle="modal" data-target="#miModal"><i class="fas fa-sign-in-alt"></i> Log in</button>
+
+            <button class="btn btn-link text-dark" data-toggle="modal" data-target="#modalTyC">Terminos y condiciones</button>
+    </div>
+</nav>
+<!-- Seccion correspondiente a modal log in -->
+
+   <div class="modal fade" data-backdrop="static" data-keyboard="false" id="#miModal" tabindex="-1" aria-labelledby="modalloginejemplo" aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header bg-custom">
+                   <h5 class="modal-title">Inicio de sesión</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body bg-transparent">
+                   <p class="display-4  text-center">¡Bienvenido!</p>
+                   <form>
+                       <div class="form-row col-12 text-center">
+                           <div class="form-group">
+                               <label for="user">Usuario
+                               </label>
+                               <input type="email" id="user" class="form-control shadow-sm is-valid" placeholder="Tu correo de usuario">
+                               <div class="valid-feedback shadow-lg">
+                                   Usuario registrado
+                               </div>
+                           </div>
+                       </div>
+                       <div class="form-row">
+                           <div class="form-group col-12 text-center">
+                               <label for="password">Contraseña</label>
+                               <input type="password" id="password" placeholder="contraseña" class="form-control shadow-lg is-invalid">
+                               <div class="invalid-feedback">
+                                   Contraseña no válida
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+                   <div class="row">
+                       <button 
+                       class="btn btn-link btn-block"
+                       data-toggle="modal"
+                       data-target="#modalTyC">
+                           Terminos y condiciones
+                       </button>
+                   </div>
+               </div>
+               <div class="modal-footer">
+                   <div class="col-12 d-flex">
+                       <button class="btn btn-outline-primary col-6 shadow">Registrarte</button>
+                       <button class="btn btn-outline-success col-6 shadow">Iniciar sesión</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+
+                        <div class="spinner-grow text-custom" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                   </div>
+                   
+           </div>
+       </div>
+   </div>
+   <!-- aqui termina seccion de modal log in -->
+
+   <!-- Aqui inicia modal Terminos y condiciones -->
+    
+   <div class="modal fade" data-backdrop="static" data-keyboard="false" id="modalTyC" tabindex="-1" aria-hidden="true" aria-labelledby="ejemploModal2">
+       <div class="modal-dialog modal-dialog-scrollable">
+           <div class="modal-content">
+               <div class="modal-header bg-custom">
+                  <h5 class="modal-title">Terminos y condiciones</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-labelledby="Close"><span aria-hidden="true">&times;</span></button>
+               </div>
+               <div class="modal-body">
+                   <h6>Bienvenido</h6>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sint quam illum aspernatur quasi atque eos, in molestiae facilis blanditiis molestias repellendus, dolores ipsam adipisci, pariatur beatae quidem quod unde.
+                   Voluptate, itaque veritatis nostrum aliquid molestias sequi consectetur fugit, quod illo tempore amet est officia perspiciatis, voluptatum esse perferendis! Recusandae nobis vero ipsum blanditiis? Nam aspernatur cupiditate nisi recusandae quos!
+                   Laboriosam recusandae excepturi veniam necessitatibus maiores a rem sed tempora pariatur quo! Voluptatum ea reprehenderit corrupti eum minima nisi perferendis qui veniam ratione recusandae quaerat, velit hic facere in numquam.
+                   Quibusdam, illum nihil cumque soluta vitae ipsam, ratione tempore suscipit voluptate omnis magni ducimus assumenda eius animi temporibus in obcaecati pariatur quod? Cum molestias, eveniet impedit laborum maxime repellendus officiis.
+                   Itaque adipisci nihil blanditiis, quo in fuga aliquam sit harum impedit mollitia ducimus! Commodi maxime nemo repudiandae repellat, omnis illo! Laboriosam tempora, voluptatem hic iure quisquam quo architecto in tempore.
+                   Eaque minus aspernatur soluta libero sit ipsum aliquam aliquid facilis, beatae ad ea mollitia commodi omnis officiis nobis odit vel, repellat rem. Veniam dolorum nisi culpa dolorem accusamus. Eos, molestias.
+                   Incidunt sit consequatur ad ut harum suscipit ea, laborum velit corporis nulla voluptatem debitis eos iste similique eligendi, neque maxime libero non. Autem ipsum eos, aliquam commodi beatae earum provident?
+                   Quasi, enim quibusdam. Quod neque nisi eum at facere? Porro beatae ut natus eveniet laboriosam vel, similique quasi enim consequuntur eius obcaecati praesentium! Aliquid minima non, velit laborum fugiat odit!
+                   Earum, nesciunt odio deleniti nisi dicta aperiam dignissimos numquam autem velit quisquam ullam consequatur corrupti maiores. Et quas vero, quam voluptatem reiciendis provident ducimus vitae. Sequi architecto voluptatibus reprehenderit non.
+                   Minima, magnam! Aperiam necessitatibus temporibus magni blanditiis? Aspernatur saepe consequuntur possimus? Numquam dolor libero omnis itaque, iusto nemo dolores, voluptatem odio, deserunt aliquid at distinctio expedita recusandae blanditiis error architecto!
+                   Voluptate deleniti dolor quidem illo ipsa enim. Unde repudiandae consectetur eos hic ipsa voluptatibus deleniti facilis consequuntur quasi, exercitationem ea impedit eum accusantium quas rerum necessitatibus, excepturi eaque labore nobis!
+                   Recusandae voluptate necessitatibus, quisquam commodi sequi veritatis magnam fugiat officiis reprehenderit soluta, ratione quod quia consectetur unde nesciunt tempore nisi tempora. Facere voluptatum nihil aperiam magni reprehenderit praesentium voluptates adipisci!
+                   Non saepe, excepturi eius ducimus totam minima tempora quam ratione quas quidem debitis, nesciunt error impedit eos, voluptate obcaecati quibusdam. Temporibus ducimus, sed dolores aliquid explicabo culpa mollitia quibusdam vero.
+                   Animi, inventore? Blanditiis, repellat? Incidunt illo amet cum magnam animi odio officia natus numquam et laboriosam. Quaerat consectetur eum porro facilis nesciunt necessitatibus, voluptate quibusdam ad! Accusantium alias consequuntur ipsam?
+                   Magni ipsa enim, tempore eaque iste nihil, unde ducimus eos incidunt aperiam asperiores veniam, nostrum saepe fugiat non! Neque vel dolor voluptatem laboriosam placeat eum? Eligendi, consequatur rem? Doloremque, nam.
+                   Dicta amet aut vitae debitis explicabo reiciendis mollitia exercitationem soluta magnam aperiam beatae nostrum eius in alias quidem officia, atque placeat. Consequuntur laboriosam alias sit inventore, corrupti fugit sequi explicabo.
+                   Quis hic facere omnis nisi commodi. Eum animi soluta exercitationem voluptas ut corporis, voluptates dicta porro quia enim quidem tempore sint minus placeat accusamus mollitia, nostrum totam consectetur ad neque?
+                   Dolore, beatae vero. Perferendis, illo fugit? Delectus quo architecto ipsum exercitationem ipsam quasi tenetur animi iusto similique hic suscipit fugit perspiciatis expedita libero tempora, aut, eveniet deleniti enim voluptatem consectetur.
+                   Deleniti magnam blanditiis doloribus amet? Quod deleniti nisi ipsum aliquam odio minima blanditiis iste, dolores sequi, doloremque veritatis ex, culpa labore. Atque alias quo odit! Ex vitae sunt reiciendis aspernatur.
+                   Porro praesentium molestias itaque hic, repellendus voluptates quaerat optio quidem accusantium, tenetur ipsa saepe modi quos? Vitae temporibus ducimus culpa voluptates ratione officiis, fugit sint saepe eum voluptate fuga necessitatibus?</p>
+               </div>
+               <div class="modal-footer">
+                   <div class="col-12">
+                       <input id="acept" type="checkbox" class="form-check-input">
+                       <label for="acept">Acepto terminos y condiciones</label>
+                   </div>
+                   <div class="col-6">
+                       <button class="btn bg-custom btn-block">Enviar</button>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Aqui termina modal Terminos y condiciones -->
+   <h5>Terminos y condiciones</h5>
+   <button 
+   class="btn btn-primary"
+   data-toggle="tooltrip"
+   title="<b> Esto es un elemnto<\b> dentro de un tooltip"
+    data-placement="bottom"
+    data-html="true">Boton con tooltip
+</button>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./b4/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

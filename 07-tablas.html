@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+</head>
+<body>
+    <h1>Tablas de HTML</h1>
+    <hr> 
+    
+    <table border="1px" width="100%">
+    
+
+    <!-- el elemento table es un contenedor (reserva el espacio para renderizar una tabla) -->
+    <table>
+        <!-- encabezados de la tabla -->
+        <thead>
+           <!-- rows -- filas --> 
+           <tr>
+               <th colspan="3">Tabla de paises</th>
+               <!-- El atributo colspan controla cuantas columnas ocupa el ancho de una celda -->
+           </tr>
+           <tr>  
+               <!-- th celda de tipo header o encabezado-->
+               <th>Identificador</th>
+               <th>Pais</th>
+               <th>Idioma</th>
+           </tr>
+        </thead>
+        
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Mexico</td>
+                <td rowspan=Español</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>España</td>
+                <td>Español</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>brazil</td>
+                <td>Portuges</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>EUA</td>
+                <td>Ingles</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">
+                    15 de julio de 2020
+
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+ 
+</body>
+</html>

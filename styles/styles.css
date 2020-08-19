@@ -1,0 +1,10 @@
+.boxMenu img{
+    width: 60px;
+
+}
+.boxMenu a{
+    display: block;
+    font-family: 'open sans', sans serif;
+    background-color: blueviolet;
+    
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.padre {
+    border: deeppink 2px solid;
+    padding: 20px;
+}
+
+p {
+    margin: 10px;
+}
+/* Primer hijo párrafo del elemento padre */
+#padre p:first-child {
+    /* Tamaño de la fuente */
+    font-size: 120%;
+    font-weight: bolder;
+}
+/* Hijo especifico(2) párrafo dentro de padre */
+#padre p:nth-child(2) {
+    color: red;
+}
+/*El último hijo dentro de su tipo dentro de cualquier div*/
+div p:last-of-type {
+    color: blue;
+}
+/*Pseudo clases para links*/
+a {
+  font-size: 50px;
+  font-weight: bolder;
+  /* Quitar decoradores */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Link no visitado*/
+a:link {
+    color: deeppink;
+}
+/*Link visitado*/
+a:visited {
+    color: purple;
+}
+/*Hover a link*/
+a:hover {
+    color: royalblue;
+}
+
+/*Ejemplo mensaje emergente*/
+#testH {
+    margin: 50px;
+    padding: 40px;
+    background-color: rgba(62, 230, 185, 0.4);
+}
+
+#testH p:first-child {
+    display: none;
+    background-color: darkblue;
+    color: wheat;
+    padding: 20px;
+}
+/*Reglas sobre el párrafo dentro de elemento testH*/
+#testH:hover p:first-child {
+    display: block;
+}
+/*Pseudo elementos*/
+#testH p:last-child::before {
+    content: " justo al lado ";
+    color: green;
+}

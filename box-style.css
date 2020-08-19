@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#padre {
+    background-color: lightgreen;
+    /*Espacio entre contenido y contenedor*/
+    /*padding: 20px;  Todos los espacios*/
+    /*padding: 20px 40px;  Arriba/Abajo Der/Izq */
+    /*padding: 20px 40px 10px;  Arriba Lateral Abajo */
+    padding: 20px 40px 30px 10px; /*Arriba Der Abajo Izq*/
+
+}
+
+#hijo {
+    background-color: lightcoral;
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 2cm;
+}
+
+h1 {
+    font-size: calc(1.5rem + 3vw);
+}
+
+article {
+    /*Máximo número de columnas, Ancho minimo que una columna puede medir*/
+    /*columns: 2 200px;*/
+    column-count: 2;
+    column-width: 15em;
+    column-gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+}

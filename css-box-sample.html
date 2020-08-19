@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sample</title>
+    <style type="text/css" media="screen">
+    /*Importar hoja de estilos*/
+    
+      @import './styles/box-style.css';
+
+    </style>
+    <!-- 
+        <link rel="stylesheet" type="text/css" href="/styles/box-styles.css" media="screen">
+    -->
+</head>
+<body>
+    <div id="padre">
+        <div id="hijo">
+            <p>Contenido y prueba sobre elementos de bloque<spani>y en linea</spani> </p>
+        </div>
+    </div>
+    <div id="adj">
+        <p class="cajas" id="esquinas1">Texto 1</p>
+        
+        <p class="cajas" id="esquinas2">Texto 2</p>
+       
+        <p class="cajas posicion" id="esquinas3">Texto 3</p>
+        
+    </div>
+    <div id="desp">
+        <h2>Display: none</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto? Itaque non repudiandae sed reiciendis. Consectetur laudantium dicta quod. Dolor minima odio aliquam voluptates? <span class="ej1">Facilis, eius facere? Sed,</span> expedita repellat.</p>
+        <h2>Display: inline</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto? Itaque non repudiandae sed reiciendis. Consectetur laudantium dicta quod. Dolor minima odio aliquam voluptates? <span class="ej2">Facilis, eius facere? Sed,</span> expedita repellat.</p>
+        <h2>Display: block</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto? Itaque non repudiandae sed reiciendis. Consectetur laudantium dicta quod. Dolor minima odio aliquam voluptates? <span class="ej3">Facilis, eius facere? Sed,</span> expedita repellat.</p>
+        <h2>Display: inline-block</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto? Itaque non repudiandae sed reiciendis. Consectetur laudantium dicta quod. Dolor minima odio aliquam voluptates? <span class="ej4">Facilis, eius facere? Sed,</span> expedita repellat.</p>
+    </div>
+    
+    
+</body>
+</html>
